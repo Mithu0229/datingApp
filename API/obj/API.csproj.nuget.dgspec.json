@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj": {}
+    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj": {}
   },
   "projects": {
-    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj": {
+    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
+        "projectUniqueName": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
+        "projectPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Mitu\\.nuget\\packages\\",
-        "outputPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\obj\\",
+        "outputPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitu\\AppData\\Roaming\\NuGet\\NuGet.Config",

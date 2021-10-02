@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rOUSMHnUZLrnLdwwEeaQHiXjdwKlz9Gn7ijW0grstuZUKdfjeBeN8kIpvurbrJ+TvvKihdEm8JIgSafRMGfdYA==",
+  "dgSpecHash": "4o8YRJ+HiWXJ7CBMinlMwcJ7/yGopAaMOckptRg/6+aEj13RL3wwyKVq56vFuQLDgKAH67o5qkFoFNhvYoD6pw==",
   "success": true,
-  "projectFilePath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
+  "projectFilePath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mitu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
