@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "kwxxzgt4c/bTo/GpGOQqpBEAsyjcPi3P67g40iqX4uTAazbRW8UlKF4QpVzisygJATV4SX5Y3TnG0YQkfzxFHg==",
+  "success": true,
+  "projectFilePath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mitu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mitu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mitu\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mitu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mitu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Mitu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
