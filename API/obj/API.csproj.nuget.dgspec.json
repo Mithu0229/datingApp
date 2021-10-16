@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj": {}
+    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj": {
+    "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
+        "projectUniqueName": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
+        "projectPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Mitu\\.nuget\\packages\\",
-        "outputPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\obj\\",
+        "outputPath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mitu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.10, )"
