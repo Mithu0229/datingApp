@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xhUedsrymSJIinNr2BP8SltG1ilOklr44cr/KC/QxMi1FpZU1LoHYpwA1QdRWJZNxVLqzBfCqC0G368F7hp1Ag==",
+  "dgSpecHash": "eJADgfGrZhYTcppcCkcfkmSVyXHR1DWATSXjUkqjsDJkoWPmnk2Wl1zN9YQJEPcWJII78kjcNLVErvwWE3u+4A==",
   "success": true,
-  "projectFilePath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\API\\API.csproj",
+  "projectFilePath": "F:\\Target2021\\learn\\asp.net core 5 and angular 10\\datingApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitu\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Mitu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
