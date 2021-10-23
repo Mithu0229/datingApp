@@ -7,6 +7,7 @@ using API.Entites;
 using API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace API.Controllers
 {
@@ -50,7 +51,8 @@ namespace API.Controllers
     [HttpPost("login")]
     public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
     {
-      var user = await _context.Users.SingleOrDefaultAsync(a => a.UserName == loginDto.UserName);
+      var user = await _context.Users.Include(x=>x.Photos)
+      .SingleOrDefaultAsync(a => a.UserName == loginDto.UserName);
 
       if (user == null) return Unauthorized("User not found.");
 
@@ -66,7 +68,8 @@ namespace API.Controllers
        return new UserDto
       {
         Username = user.UserName,
-        Token = _tokenService.CreateToken(user)
+        Token = _tokenService.CreateToken(user),
+        PhotoUrl = user.Photos.FirstOrDefault(x=>x.IsMain)?.Url
       };
     }
     private async Task<bool> IsExistUser(string userName)

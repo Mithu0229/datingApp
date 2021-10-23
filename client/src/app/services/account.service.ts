@@ -20,8 +20,7 @@ baseUrl= environment.apiUrl ;
       map((response: User) => { // set user interface but problem this problem solve by post<User> use it
       const user=response as User;
       if(user){
-        localStorage.setItem('user',JSON.stringify(user));
-        this.currentUserSource.next(user);
+        this.setCurrentUser(user);
       }
     }))
   }
@@ -31,14 +30,14 @@ baseUrl= environment.apiUrl ;
       map((response: User) => { // set user interface but problem this problem solve by post<User> use it
       const user=response as User;
       if(user){
-        localStorage.setItem('user',JSON.stringify(user));
-        this.currentUserSource.next(user);
+        this.setCurrentUser(user);
       }
      
     }))
   }
 
   setCurrentUser(user:User){
+    localStorage.setItem('user',JSON.stringify(user));
     this.currentUserSource.next(user);
   }
 
