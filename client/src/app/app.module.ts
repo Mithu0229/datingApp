@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
@@ -22,6 +22,8 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { TextInputComponent } from './forms/text-input/text-input.component';
+import { DateInputComponent } from './forms/date-input/date-input.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
     MessagesComponent,
     MemberCardComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TextInputComponent,
+    DateInputComponent
   ],
   imports: [
     BrowserModule,
@@ -43,8 +47,10 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     SharedModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    
     
   ],
   providers: [

@@ -8,6 +8,7 @@ using API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using AutoMapper;
 
 namespace API.Controllers
 {
@@ -15,9 +16,11 @@ namespace API.Controllers
   {
     private readonly DataContext _context;
     private readonly ITokenService _tokenService;
+    private readonly IMapper _mapper;
 
-    public AccountController(DataContext context, ITokenService tokenService)
+    public AccountController(DataContext context, ITokenService tokenService, IMapper mapper)
     {
+      _mapper = mapper;
       _tokenService = tokenService;
 
       _context = context;
@@ -31,20 +34,20 @@ namespace API.Controllers
       {
         return BadRequest("Not Create");
       }
+      var user= _mapper.Map<AppUser>(register);
       using var hmac = new HMACSHA512();
-      var user = new AppUser
-      {
-        UserName = register.Username,
-        PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(register.Password)),
-        PasswordSalt = hmac.Key
-      };
+      user.UserName = register.Username;
+      user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(register.Password));
+      user.PasswordSalt = hmac.Key;
+      
 
       _context.Users.Add(user);
       await _context.SaveChangesAsync();
       return new UserDto
       {
         Username = user.UserName,
-        Token = _tokenService.CreateToken(user)
+        Token = _tokenService.CreateToken(user),
+        KnownAs = user.KnownAs
       };
 
     }
@@ -69,7 +72,9 @@ namespace API.Controllers
       {
         Username = user.UserName,
         Token = _tokenService.CreateToken(user),
-        PhotoUrl = user.Photos.FirstOrDefault(x=>x.IsMain)?.Url
+        PhotoUrl = user.Photos.FirstOrDefault(x=>x.IsMain)?.Url,
+        KnownAs = user.KnownAs
+
       };
     }
     private async Task<bool> IsExistUser(string userName)

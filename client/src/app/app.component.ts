@@ -19,9 +19,10 @@ export class AppComponent implements OnInit{
   }
 
   setCurrentUser(){ //same name in service class must be
-    const getUserStore=localStorage.getItem('user');
-    const user: User = JSON.parse(getUserStore !== null ?JSON.parse(getUserStore) :{}); //problem but it work
-    this.accountService.setCurrentUser(user);
+    const getUserStore=localStorage.getItem('user')!;
+    const usr=JSON.parse(getUserStore);
+   // const user: User = JSON.parse(getUserStore !== null ?JSON.parse(getUserStore) :{}); //problem but it work
+    this.accountService.setCurrentUser(usr);
   }
 
  
