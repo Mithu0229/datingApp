@@ -28,6 +28,17 @@ userParams : UserParams;
     })
    }
 
+   addLike(username : string){
+    return this.http.post(this.baseUrl +'likes/'+username,{});
+   }
+
+   getLikes(predicate :string, pageNumber:any,pageSize:any){
+     let params= this.getPaginationHeaders(pageNumber,pageSize);
+     params=params.append('predicate',predicate);
+     return this.getPaginationResult<Partial<Member[]>>(this.baseUrl +'likes',params);
+    
+   }
+
    getUserParams(){
      return this.userParams;
    }
